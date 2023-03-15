@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Book Renewal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box flex">
+      <h1>Vehicle Blue Book Renewal 🎇</h1>
+
+      <label for="fee">* Renewal Fee</label>
+      <input
+        id="yfee"
+        type="number"
+        placeholder="Enter Your Yearly Renewal Fee"
+      />
+
+      <div class="select flex">
+        <label>* Late Penalty Fee</label>
+      </div>
+      <label for="latefee" disabled>Late Fee :</label>
+      <input id="latefee" type="number" placeholder="0" disabled />
+
+      <label for="insurance"> Insurance</label>
+      <div class="flex insurace-container">
+        <input
+          type="number"
+          id="insurance"
+          placeholder="Enter Your Insurance Amount"
+        />
+        <span> /year</span>
+      </div>
+
+      <label for="total" disabled>Total Renewal Charge : </label>
+      <input id="total" type="number" placeholder="0" disabled />
+      <button onclick="calculateTotal()" class="submitBtn">
+        Calculate Total Charge
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
